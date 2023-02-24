@@ -1,0 +1,46 @@
+.shopify_options {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 2rem 8rem;
+  max-width: 1180px;
+  margin: auto;
+  .shopify_option {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .shopify_icon {
+      fill: #fcbe00;
+      font-size: 50px;
+      margin-right: 1rem;
+    }
+    .shopify_option_text {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: space-around;
+      strong {
+        color: rgb(34, 34, 34);
+        font-size: 13px;
+        font-weight: 500;
+        line-height: 13px;
+      }
+      span {
+        color: rgb(102, 102, 102);
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 13px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .shopify_options {
+    display: -ms-flexbox;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-right: -7.5px;
+    margin-left: -7.5px;
+  }
+}

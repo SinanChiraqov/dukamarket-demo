@@ -1,0 +1,196 @@
+.footer_main {
+  background: rgb(31, 32, 36);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  .footer_main_container {
+    width: 1200px;
+    padding: 1rem;
+    padding-bottom: 0;
+    .footer_heading {
+      display: flex;
+      padding: 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.35);
+      li.heading_item {
+        margin-bottom: 1rem;
+        width: 20%;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 18px;
+        color: rgb(255, 255, 255);
+        ul.footer_submenu {
+          align-items: flex-start;
+          padding: 0;
+          &:last-child {
+            width: 300px;
+            text-align: left;
+          }
+          li {
+            margin-top: 1rem;
+            a {
+              font-size: 14px;
+              font-weight: 400;
+              line-height: 14px;
+              color: rgba(255, 255, 255, 0.35);
+              &:hover {
+                color: rgb(252, 190, 0);
+                padding-left: 10px;
+              }
+            }
+            
+          }
+        }
+       
+        &:last-child {
+          .footer_questinonary {
+            display: flex;
+            align-items: center;
+            padding: 0;
+            justify-content: start;
+            & > div.phone_info > h6 {
+              font-size: 14px;
+            }
+            .phone_info {
+              padding: 0;
+              margin: 1rem 0;
+              .phone {
+                font-size: 1.5rem;
+                color: rgb(252, 190, 0);
+              }
+            }
+            .earphones_icon {
+              font-size: 2rem;
+              margin-right: 0.3rem;
+              fill: rgb(252, 190, 0);
+            }
+          }
+          a.last_item {
+            &:hover {
+              color: rgba(255, 255, 255, 0.35);
+              padding: 0;
+            }
+          }
+          .footer_questinonary {
+            .phone_info {
+              margin: 1.5rem 0;
+            }
+          }
+          .address {
+            font-size: 14px;
+              font-weight: 400;
+              line-height: 14px;
+              color: rgba(255, 255, 255, 0.35);
+          }
+          .mail_address {
+            font-size: 14px;
+              font-weight: 400;
+              line-height: 14px;
+              color: rgba(255, 255, 255, 0.35);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .footer_main {
+    background: rgba(0, 0, 0, .9);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    .footer_main_container {
+      width: 100%;
+      padding: 1rem;
+      padding-bottom: 0;
+      .footer_heading {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.35);
+        li.heading_item {
+          width: 100%;
+          background: rgb(31, 32, 36);
+          margin-bottom: 1rem;
+          padding: 1rem;
+          font-size: 18px;
+          font-weight: 500;
+          line-height: 18px;
+          color: rgb(255, 255, 255);
+          ul.footer_submenu {
+            align-items: flex-start;
+            background-color: transparent;
+            padding: 0;
+            &:last-child {
+              width: 300px;
+              text-align: left;
+            }
+            li {
+              margin-top: 1rem;
+              a {
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 14px;
+                color: rgba(255, 255, 255, 0.35);
+                &:hover {
+                  color: rgb(252, 190, 0);
+                  padding-left: 10px;
+                }
+              }
+              
+            }
+          }
+         
+          &:last-child {
+            .footer_questinonary {
+              display: flex;
+              align-items: center;
+              padding: 0;
+              justify-content: start;
+              & > div.phone_info > h6 {
+                font-size: 14px;
+              }
+              .phone_info {
+                padding: 0;
+                margin: 1rem 0;
+                .phone {
+                  font-size: 1.5rem;
+                  color: rgb(252, 190, 0);
+                }
+              }
+              .earphones_icon {
+                font-size: 2rem;
+                margin-right: 0.3rem;
+                fill: rgb(252, 190, 0);
+              }
+            }
+            a.last_item {
+              &:hover {
+                color: rgba(255, 255, 255, 0.35);
+                padding: 0;
+              }
+            }
+            .footer_questinonary {
+              .phone_info {
+                margin: 1.5rem 0;
+              }
+            }
+            .address {
+              font-size: 14px;
+                font-weight: 400;
+                line-height: 14px;
+                color: rgba(255, 255, 255, 0.35);
+            }
+            .mail_address {
+              font-size: 14px;
+                font-weight: 400;
+                line-height: 14px;
+                color: rgba(255, 255, 255, 0.35);
+            }
+          }
+        }
+      }
+    }
+  }
+  
+}

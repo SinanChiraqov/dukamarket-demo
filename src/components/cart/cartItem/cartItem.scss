@@ -1,0 +1,91 @@
+.cart_list_item {
+  padding: 1.5rem 0;
+  padding-bottom: 0;
+  :last-child {
+    .cart_list_item_container {
+      border-bottom: none;
+    }
+  }
+  .cart_list_item_container {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+    display: flex;
+    align-items: center;
+    position: sticky;
+    img {
+      width: 100px;
+    }
+    .cartlist_item_delete {
+      .delete_item {
+        margin-left: 0.5rem;
+      }
+    }
+    .cartlist_item_description {
+      a {
+        h4.cartlist_item_heading {
+          color: rgb(0, 104, 201);
+          font-size: 16px;
+        }
+      }
+      .cartlist_price {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .cartlist_item_ammount {
+          padding-right: 1rem;
+
+          button.ammount_btn {
+            width: 30px;
+            border: 1px solid rgba(0, 0, 0, 0.15);
+            background: transparent;
+            color: rgb(13, 13, 13);
+            padding: .29rem 0;
+          }
+          .decrease_ammount {
+            border-top-left-radius: 3px;
+            border-bottom-left-radius: 3px;
+          }
+          .increase_ammount {
+            border-top-right-radius: 3px;
+            border-bottom-right-radius: 3px;
+          }
+          input {
+            width: 50px;
+            padding: .4rem 0;
+            // height: 30px;
+            border: 1px solid rgba(0, 0, 0, 0.15);
+            outline: none;
+            color: black;
+            text-align: center;
+            font-size: 14px;
+          }
+        }
+        .cartlist_price_container {
+          display: flex;
+          align-items: center;
+
+          .cartlist_discount {
+            font-size: 15px;
+            font-weight: 700;
+            line-height: 30px;
+            color: rgb(204, 20, 20);
+            margin-right: 0.6rem;
+          }
+          .cartlist_ammount {
+            font-size: 15px;
+            font-weight: 700;
+            line-height: 30px;
+            color: rgb(13, 13, 13);
+            margin-right: 0.6rem;
+          }
+          .cartlist_main_price {
+            font-size: 15px;
+            font-weight: 500;
+            line-height: 30px;
+            color: rgb(153, 153, 153);
+            text-decoration: line-through;
+          }
+        }
+      }
+    }
+  }
+}

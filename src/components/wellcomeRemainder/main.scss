@@ -1,0 +1,191 @@
+.welcome {
+  position: fixed;
+  z-index: 8888;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.35);
+  left: 0;
+  top: 0;
+  color: aliceblue;
+  .close_welcome {
+    position: absolute;
+    border-radius: 7px;
+    overflow: hidden;
+    background-color: #fcbe00;
+    top: 5%;
+    left: 68%;
+
+    .close_welcome_btn {
+      border: none;
+      outline: none;
+      width: 100%;
+      height: 100%;
+      padding: 0.5rem 0.7rem;
+      background-color: transparent;
+    }
+  }
+  .welcome_container {
+    position: absolute;
+    z-index: 9999;
+    width: 600px;
+    height: 600px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background: rgb(8, 34, 60);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .wellcome_h5 {
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 14px;
+      margin: 1.5rem 0;
+    }
+    .wellcome_h1 {
+      font-size: 60px;
+      font-weight: 500;
+      line-height: 60px;
+      color: rgb(252, 190, 0);
+    }
+    .wellcome_p {
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 23.8px;
+      margin: 1.5rem 0;
+    }
+    .wellcome_input {
+      width: 400px;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      outline: none;
+      padding: 0.4rem 1rem;
+      border-radius: 70px;
+      background-color: rgb(20, 46, 72);
+      text-align: center;
+      font-size: 13px;
+      margin-bottom: 1rem;
+      &:hover {
+        font-size: 15px;
+        }
+      }
+      .wellcome_button {
+        width: 400px;
+        border: none;
+        outline: none;
+        border-radius: 70px;
+        color: rgb(34, 34, 34);
+        font-size: 13px;
+        font-weight: 600;
+        text-transform: uppercase;
+        background-color: rgb(252, 190, 0);
+        padding: 0.8rem 1rem;
+        margin-bottom: 3rem;
+        &:hover {
+          color: #fff;
+        }
+      }
+      .wellcome_label {
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 22.1px;
+        color: rgb(95, 138, 179);
+        margin-left: 1rem;
+      }
+  }
+}
+
+// @media screen and (max-width: 768px) {
+//   .welcome {
+    
+//   }
+// }
+
+@media screen and (max-width: 600px) {
+  .welcome {
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    .close_welcome {
+      position: absolute;
+      z-index: 9999999999;
+      border-radius: 7px;
+      overflow: hidden;
+      background-color: #fcbe00;
+      top: 90px;
+      left: 85%;
+
+      .close_welcome_btn {
+        border: none;
+        outline: none;
+        width: 100%;
+        height: 100%;
+        padding: 0.5rem 0.7rem;
+        background-color: transparent;
+      }
+      
+    }
+    .welcome_container {
+      width: 90%;
+      height: 500px;
+      border-radius: 5px;
+      padding: 1rem;
+      .wellcome_h5 {
+        font-size: 11.7px;
+        font-weight: 600;
+        line-height: 14px;
+        margin: .5rem 0;
+      }
+      .wellcome_h1 {
+        font-size: 30px;
+        font-weight: 500;
+        line-height: 60px;
+        color: rgb(252, 190, 0);
+      }
+      .wellcome_p {
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 23.8px;
+        margin: .5rem 0;
+      }
+      .wellcome_input {
+        width: 100%;
+        border: 1px solid rgba(255, 255, 255, 0.15);
+        outline: none;
+        padding: 0.4rem 1rem;
+        border-radius: 70px;
+        background-color: rgb(20, 46, 72);
+        text-align: center;
+        font-size: 13px;
+        margin-bottom: 1rem;
+        &:hover {
+          font-size: 15px;
+          }
+        }
+        .wellcome_button {
+          width: 100%;
+          border: none;
+          outline: none;
+          border-radius: 70px;
+          color: rgb(34, 34, 34);
+          font-size: 12px;
+          font-weight: 600;
+          text-transform: uppercase;
+          background-color: rgb(252, 190, 0);
+          padding: 0.8rem 1rem;
+          margin-bottom: 3rem;
+          &:hover {
+            color: #fff;
+          }
+        }
+        .wellcome_label {
+          font-size: 13px;
+          font-weight: 400;
+          line-height: 22.1px;
+          color: rgb(95, 138, 179);
+          margin-left: 1rem;
+        }
+    }
+  }
+}

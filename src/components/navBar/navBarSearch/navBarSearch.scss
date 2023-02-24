@@ -7,22 +7,18 @@
     font-size: 1rem;
     font-weight: lighter;
     margin: auto;
-    padding: 2.5rem 0;
-    border-bottom: 1px solid #cacaca;
+    padding: 1rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
     .navbar_brand {
-      a {
-        h1.brand {
-          font-family: Rubik;
-          font-size: 34px;
-          font-weight: 600;
-          line-height: 15.4px;
-          color: rgb(252, 190, 0);
-        }
+      .navbar_side_res {
+        display: none;
+      }
+      .responsive_cart {
+        display: none;
       }
     }
     .navbar_search_input {
       height: 3rem;
-      // border: 1px solid black;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -35,7 +31,7 @@
         outline: none;
         font-family: Rubik;
         option {
-            color: #222222;
+          color: #222222;
         }
       }
       input {
@@ -51,15 +47,16 @@
       }
       button {
         height: 49px;
-        padding: 0 .5rem;
+        padding: 0 0.5rem;
+        height: 53px;
         background: #fcbe00;
         border: none;
         outline: none;
         border-top-right-radius: 3px;
         border-bottom-right-radius: 3px;
-        .search_btn {
-          font-size: 2rem;
-          fill: #222222;
+        .search_btn_icon {
+          font-size: 1.5rem;
+          fill: #fff;
         }
       }
     }
@@ -72,6 +69,16 @@
         align-items: center;
         margin-right: 0.7rem;
         justify-content: space-around;
+        position: relative;
+        .badges {
+          position: absolute;
+          top: -5px;
+          left: 15px;
+          padding: 0.2rem 0.5rem;
+          border-radius: 50%;
+          background-color: #fcbe00;
+          font-size: 14px;
+        }
         .icon {
           font-size: 2rem;
           margin-right: 0.5rem;
@@ -80,14 +87,103 @@
           display: flex;
           flex-direction: column;
           span {
-          font-size: .8rem;
-          font-weight: 100;
-          color: #25a799;
+            font-size: 0.8rem;
+            font-weight: 100;
+            color: #25a799;
           }
           strong {
             font-size: 1rem;
             font-weight: 100;
           }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .navbar_search {
+    .navbar_search_container {
+      padding: 1rem;
+      width: 100%;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      margin-right: -7.5px;
+      margin-left: -7.5px;
+      .navbar_search_icons {
+        display: none;
+      }
+      .navbar_brand {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .navbar_side_res {
+          display: block;
+          .navside_menu_btn {
+            background-color: transparent;
+            border: none;
+            outline: none;
+            .menu_icon {
+              font-size: 35px;
+            }
+          }
+        }
+        
+        .responsive_cart {
+          display: block;
+          .navbar_search_icon_cart {
+            position: relative;
+            z-index: 1;
+            .icon_bag_res {
+              z-index: 1;
+              font-size: 1.5rem;
+            }
+            .badges {
+              display: block;
+              position: absolute;
+              background-color: #fcbe00;
+              top: -25%;
+              right: -30%;
+              z-index: 999999999999999999999999;
+              padding: .1rem .4rem;
+              border-radius: 50%;
+              font-size: .7rem;
+            }
+          }
+        }
+        
+        .navbar_search_icon {
+          position: relative;
+          .badges {
+            position: absolute;
+            top: -20%;
+            right: -20%;
+            padding: 0.1rem 0.4rem;
+            border-radius: 50%;
+            background-color: #fcbe00;
+          }
+          .icon_bag {
+            font-size: 35px;
+          }
+        }
+        
+      }
+      .navbar_search_input {
+        width: 100%;
+        margin-top: 1rem;
+        .navbar_search_select {
+          display: none;
+        }
+        .navbar_search_text_input {
+          width: 100%;
+          border-top-left-radius: 3px;
+          border-bottom-left-radius: 3px;
+        }
+        .search_btn_icon_icon {
+          fill: #fff;
         }
       }
     }

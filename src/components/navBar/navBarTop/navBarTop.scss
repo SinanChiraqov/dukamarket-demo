@@ -1,5 +1,5 @@
 .navBar_top {
-  border-bottom: .1px solid #cacaca;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
   .navBar_top_main {
     display: flex;
     flex-direction: row;
@@ -26,5 +26,11 @@
         margin: 0.5rem;
       }
     }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .navBar_top {
+    display: none;
   }
 }

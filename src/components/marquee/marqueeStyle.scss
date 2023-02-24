@@ -1,0 +1,11 @@
+.marquee_container {
+  .marquee {
+    color: black;
+    background: #283d98;
+    padding: .5rem 0;
+    display: flex;
+    p {
+      width: 1180px;
+    }
+  }
+}
