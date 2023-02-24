@@ -1,0 +1,30 @@
+.navBar_top {
+  border-bottom: .1px solid #cacaca;
+  .navBar_top_main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    font-size: 0.8rem;
+    max-width: 1180px;
+    .nav_top_left {
+      list-style: none;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      & li {
+        margin: 0.5rem;
+      }
+    }
+    .nav_top_right {
+      list-style: none;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      & li {
+        margin: 0.5rem;
+      }
+    }
+  }
+}

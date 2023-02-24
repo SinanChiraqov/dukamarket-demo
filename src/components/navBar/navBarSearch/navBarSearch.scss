@@ -1,0 +1,95 @@
+.navbar_search {
+  .navbar_search_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1180px;
+    font-size: 1rem;
+    font-weight: lighter;
+    margin: auto;
+    padding: 2.5rem 0;
+    border-bottom: 1px solid #cacaca;
+    .navbar_brand {
+      a {
+        h1.brand {
+          font-family: Rubik;
+          font-size: 34px;
+          font-weight: 600;
+          line-height: 15.4px;
+          color: rgb(252, 190, 0);
+        }
+      }
+    }
+    .navbar_search_input {
+      height: 3rem;
+      // border: 1px solid black;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      select {
+        padding: 1rem;
+        color: #222222;
+        border: none;
+        border-top-left-radius: 3px;
+        border-bottom-left-radius: 3px;
+        outline: none;
+        font-family: Rubik;
+        option {
+            color: #222222;
+        }
+      }
+      input {
+        padding: 1rem;
+        border: none;
+        font-family: Rubik;
+        outline: none;
+        color: #4f4f4f;
+        font-size: 14px;
+        ::placeholder {
+          color: #4f4f4f;
+        }
+      }
+      button {
+        height: 49px;
+        padding: 0 .5rem;
+        background: #fcbe00;
+        border: none;
+        outline: none;
+        border-top-right-radius: 3px;
+        border-bottom-right-radius: 3px;
+        .search_btn {
+          font-size: 2rem;
+          fill: #222222;
+        }
+      }
+    }
+    .navbar_search_icons {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      .navbar_search_icon {
+        display: flex;
+        align-items: center;
+        margin-right: 0.7rem;
+        justify-content: space-around;
+        .icon {
+          font-size: 2rem;
+          margin-right: 0.5rem;
+        }
+        .navbar_search_icon_text {
+          display: flex;
+          flex-direction: column;
+          span {
+          font-size: .8rem;
+          font-weight: 100;
+          color: #25a799;
+          }
+          strong {
+            font-size: 1rem;
+            font-weight: 100;
+          }
+        }
+      }
+    }
+  }
+}

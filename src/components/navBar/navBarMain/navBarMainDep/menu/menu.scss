@@ -1,0 +1,24 @@
+.menu {
+  .navbar_menu {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    li {
+      margin-right: 1rem;
+    }
+    .dropdown {
+      display: none;
+      position: absolute;
+      border: 1px solid black;
+      width: 500px;
+      height: 300px;
+      top: 50px;
+      background-color: #fafafa;
+      a {
+        color: black;
+      }
+    }
+  }
+}
